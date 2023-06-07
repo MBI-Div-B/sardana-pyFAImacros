@@ -16,7 +16,15 @@ import numpy as np
     ]
 )
 def pyfai_config_moench(
-    self, energy, dist, pixel1, pixel2, npt_q, npt_chi, poni2, poni1
+    self,
+    energy,
+    dist,
+    pixel1,
+    pixel2,
+    npt_q,
+    npt_chi,
+    poni2,
+    poni1,
 ):
     # dict of arguments
     attr_list = [
@@ -49,7 +57,7 @@ def pyfai_config_moench(
     # new values dict
     new_values = {}
     energy = self.input(
-        "Photon energy [eV]:",
+        "Photon energy [eV] (Fe L3 ~ 707 eV / Gd M5 ~ 1186 eV):",
         data_type=Type.Float,
         title="photon energy",
         unit="eV",
